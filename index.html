@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>Open Concept Lab</title>
+<style>
+body {
+	background: #A2C7EF;
+	padding: 0;
+	margin: 0;
+	font-family: Verdana;
+	font-size: 9pt;
+}
+.topbar {
+	background-color: #3E3E3E;
+	color: White;
+	min-height: 35px;
+}
+.topBar p {
+	color: #AEAD9B;
+	letter-spacing: 0.15px;
+	margin: 0;
+	padding: 11px 0;
+	text-align: center;
+}
+.topBar p strong {
+	color: #eee;
+}
+.container {
+	margin: 0 auto;
+}
+.rounded {
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.main {
+	margin: 0 auto;
+	margin-top: 100px;
+	height: 200px;
+	width: 600px;
+	background-color:white;
+	padding: 20px 30px;
+}
+.main p.title {
+font-size:14pt;
+}
+.main p.sub {
+font-size:11pt;
+}
+#q {
+	height: 28px;
+	border: 1px solid #ccc;
+	width: 100%;
+	font-size: 10pt;
+	padding: 8px 6px;
+}
+#submit {
+	float: right;
+	margin-top: 10px;
+	border: 1px solid #A2C7EF;
+	background: #eee;
+	height: 28px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 10pt;
+	font-weight: bold;
+	cursor: pointer;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.watermark.min.js"></script>
+</head>
+<body>
+<div class="topbar">
+	<div class="container">
+		<p style="display:none;"><strong>open</strong>.<strong>concept</strong>.<strong>lab</strong> is currently under development.</p>
+	</div>
+</div>
+<form name="search" action="http://www.maternalconceptlab.com/search.php" method="GET">
+<div class="main rounded">
+<p class="title"><b>Open Concept Lab</b> is coming soon...</p>
+<p class="sub">In the meantime, check out the <a href="http://www.maternalconceptlab.org/">Maternal Concept Lab</a>.</p>
+<p class="sub"><input type="text" name="q" id="q" /><br/>
+<input id="submit" type="submit" value="Search" /></p>
+</div>
+</form>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#q').watermark('MCL:Search');
+});
+</script>
+
+</body>
+</html>
